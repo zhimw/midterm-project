@@ -1,0 +1,162 @@
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
+import uuid
+
+from app.config import settings
+from app.models import (
+    ChatRequest, ChatResponse, ChatMessage,
+    ProfileRequest, ProfileResponse, UserProfile
+)
+from app.agent.orchestrator import family_office_agent
+from app.memory.store import memory_store
+from app.rag.vector_store import vector_store_manager
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print("Initializing Family Office AI Agent...")
+    try:
+        vector_store_manager.initialize_stores()
+        print("Vector stores initialized successfully")
+    except Exception as e:
+        print(f"Warning: Could not initialize vector stores: {e}")
+        print("RAG functionality may be limited. Please ensure corpus files exist in data/corpus/")
+    
+    yield
+    
+    print("Shutting down Family Office AI Agent...")
+
+app = FastAPI(
+    title="Family Office AI Agent",
+    description="US-based Family Office planning system with tax optimization, investment allocation, and estate planning",
+    version="1.0.0",
+    lifespan=lifespan
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+async def root():
+    return {
+        "service": "Family Office AI Agent",
+        "version": "1.0.0",
+        "status": "operational",
+        "modules": ["tax_optimization", "investment_allocation", "estate_planning"]
+    }
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
+@app.post("/profile/create", response_model=ProfileResponse)
+async def create_profile(request: ProfileRequest):
+    try:
+        memory_store.create_session(request.session_id, request.profile.model_dump())
+        
+        return ProfileResponse(
+            session_id=request.session_id,
+            message="Profile created successfully",
+            profile=request.profile
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/profile/update", response_model=ProfileResponse)
+async def update_profile(request: ProfileRequest):
+    try:
+        session = memory_store.get_session(request.session_id)
+        if not session:
+            raise HTTPException(status_code=404, detail="Session not found")
+        
+        memory_store.update_user_profile(request.session_id, request.profile.model_dump())
+        
+        return ProfileResponse(
+            session_id=request.session_id,
+            message="Profile updated successfully",
+            profile=request.profile
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/profile/{session_id}")
+async def get_profile(session_id: str):
+    session = memory_store.get_session(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    
+    return {
+        "session_id": session_id,
+        "profile": session["user_profile"]
+    }
+
+@app.post("/chat", response_model=ChatResponse)
+async def chat(request: ChatRequest):
+    try:
+        session = memory_store.get_session(request.session_id)
+        
+        if not session:
+            if request.user_profile:
+                memory_store.create_session(request.session_id, request.user_profile.model_dump())
+            else:
+                raise HTTPException(
+                    status_code=400,
+                    detail="Session not found. Please create a profile first."
+                )
+        
+        result = family_office_agent.process_query(request.session_id, request.message)
+        
+        if "error" in result:
+            raise HTTPException(status_code=400, detail=result["error"])
+        
+        conversation_history = memory_store.get_conversation_history(request.session_id)
+        
+        return ChatResponse(
+            session_id=request.session_id,
+            response=result["response"],
+            breakdown=result["breakdown"],
+            evidence=result["evidence"],
+            modules_used=result["modules_used"],
+            conversation_history=[
+                ChatMessage(
+                    role=msg["role"],
+                    content=msg["content"],
+                    timestamp=msg.get("timestamp")
+                ) for msg in conversation_history
+            ]
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal error: {str(e)}")
+
+@app.get("/history/{session_id}")
+async def get_conversation_history(session_id: str):
+    session = memory_store.get_session(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    
+    return {
+        "session_id": session_id,
+        "conversation_history": session["conversation_history"],
+        "recommendations_history": session["recommendations_history"]
+    }
+
+@app.delete("/session/{session_id}")
+async def delete_session(session_id: str):
+    memory_store.clear_session(session_id)
+    return {"message": f"Session {session_id} deleted"}
+
+@app.post("/session/new")
+async def create_new_session():
+    session_id = str(uuid.uuid4())
+    return {"session_id": session_id}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
