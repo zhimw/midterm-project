@@ -1,0 +1,114 @@
+# Investment Domain Enhancement - URL list for scraping
+# Sources: Investopedia, Bogleheads Wiki (Vanguard/Fidelity/CFA often PDF - use manual curation)
+# Target: 25-30 additional documents (existing corpus has inv_001..inv_012)
+
+sources:
+  # --- Equity types ---
+  - url: https://www.investopedia.com/terms/g/growthstock.asp
+    category: equity_growth
+    title: Growth Stock Definition
+  - url: https://www.investopedia.com/terms/v/valuestock.asp
+    category: equity_value
+    title: Value Stock Definition
+  - url: https://www.investopedia.com/articles/basics/13/introduction-to-growth-investing.asp
+    category: equity_growth
+    title: Growth Investing Guide
+  - url: https://www.investopedia.com/terms/s/small-cap.asp
+    category: equity_small_cap
+    title: Small-Cap Stocks
+  - url: https://www.investopedia.com/terms/i/international-equitystylebox.asp
+    category: equity_international
+    title: International Equity Style Box
+  - url: https://www.investopedia.com/terms/l/large-cap.asp
+    category: equity_large_cap
+    title: Large-Cap Stocks
+
+  # --- Bond categories ---
+  - url: https://www.investopedia.com/terms/d/duration.asp
+    category: bonds_duration
+    title: Bond Duration
+  - url: https://www.investopedia.com/terms/m/macaulayduration.asp
+    category: bonds_duration
+    title: Macaulay Duration
+  - url: https://www.investopedia.com/terms/t/treasurybond.asp
+    category: bonds_government
+    title: Treasury Bonds
+  - url: https://www.investopedia.com/terms/c/corporatebond.asp
+    category: bonds_corporate
+    title: Corporate Bonds
+  - url: https://www.investopedia.com/terms/m/municipalbond.asp
+    category: bonds_municipal
+    title: Municipal Bonds
+  - url: https://www.investopedia.com/articles/bonds/08/duration-convexity.asp
+    category: bonds_duration
+    title: Duration and Convexity
+
+  # --- Alternative assets ---
+  - url: https://www.investopedia.com/terms/r/reit.asp
+    category: alternatives_reits
+    title: REITs
+  - url: https://www.investopedia.com/terms/c/commodity.asp
+    category: alternatives_commodities
+    title: Commodities
+  - url: https://www.investopedia.com/terms/p/privateequity.asp
+    category: alternatives_private_equity
+    title: Private Equity
+
+  # --- Risk & allocation ---
+  - url: https://www.investopedia.com/articles/pf/07/risk_tolerance.asp
+    category: risk_tolerance
+    title: Understanding Risk Tolerance
+  - url: https://www.investopedia.com/terms/a/assetallocation.asp
+    category: asset_allocation
+    title: Asset Allocation
+  - url: https://www.investopedia.com/terms/a/assetclasses.asp
+    category: asset_classes
+    title: Asset Classes
+  - url: https://www.investopedia.com/terms/m/modernportfoliotheory.asp
+    category: modern_portfolio_theory
+    title: Modern Portfolio Theory
+
+  # --- Tax-efficient investing (Bogleheads) ---
+  - url: https://www.bogleheads.org/wiki/Tax_loss_harvesting
+    category: tax_loss_harvesting
+    title: Tax-Loss Harvesting
+  - url: https://www.bogleheads.org/wiki/Tax-efficient_fund_placement
+    category: asset_location
+    title: Tax-Efficient Fund Placement
+  - url: https://www.bogleheads.org/wiki/Asset_allocation
+    category: asset_allocation
+    title: Asset Allocation (Bogleheads)
+  - url: https://www.bogleheads.org/wiki/Risk_tolerance
+    category: risk_tolerance
+    title: Risk Tolerance (Bogleheads)
+  - url: https://www.bogleheads.org/wiki/Bond_basics
+    category: bonds_basics
+    title: Bond Basics
+  - url: https://www.bogleheads.org/wiki/Principles_of_tax-efficient_fund_placement
+    category: asset_location
+    title: Principles of Tax-Efficient Fund Placement
+
+  # --- Portfolio management ---
+  - url: https://www.investopedia.com/terms/p/portfolio-investment.asp
+    category: portfolio_management
+    title: Portfolio Investment
+  - url: https://www.investopedia.com/articles/bonds/07/fiportfolio.asp
+    category: bonds_portfolio
+    title: Fixed-Income Portfolio
+
+  # --- CFA Institute (portfolio management basics) ---
+  - url: https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-management-overview
+    category: portfolio_management
+    title: Portfolio Management An Overview
+  - url: https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/basics-of-portfolio-planning-and-construction
+    category: portfolio_management
+    title: Basics of Portfolio Planning and Construction
+  - url: https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/principles-of-asset-allocation
+    category: asset_allocation
+    title: Principles of Asset Allocation
+  - url: https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2025/portfolio-performance-evaluation
+    category: portfolio_management
+    title: Portfolio Performance Evaluation
+  - url: https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/overview-asset-allocation
+    category: asset_allocation
+    title: Overview of Asset Allocation

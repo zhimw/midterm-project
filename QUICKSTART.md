@@ -249,6 +249,14 @@ Add entries in JSONL format:
 {"doc_id": "tax_013", "category": "retirement", "text": "Your knowledge here..."}
 ```
 
+**Process IRS publication PDFs:** Place PDFs in `raw/tax/` (e.g. `p17.pdf`, `p550.pdf`). From the project root:
+```bash
+cd backend
+pip install pdfplumber   # if not already installed
+PYTHONPATH=./vendor:$PYTHONPATH python3 scripts/process_irs_pubs.py
+```
+The script extracts text, chunks into 300–500 word segments, adds `publication` and `section` metadata, and appends to `data/corpus/tax_knowledge.jsonl` (target 30–40 additional docs; cap is set in the script).
+
 Restart backend to rebuild vector stores.
 
 ### Switch LLM Provider
