@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "q01",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q02",
+    "expected": "D",
+    "agent_response": "A",
+    "agent_passed": false,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": false,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q03",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q04",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q05",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q06",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q07",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": false,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q08",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q09",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q10",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q11",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q12",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q13",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": false,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q14",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q15",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q16",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization",
+      "estate_planning"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q17",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q18",
+    "expected": "B",
+    "agent_response": "C",
+    "agent_passed": false,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": false,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q19",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q20",
+    "expected": "D",
+    "agent_response": "B",
+    "agent_passed": false,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": false,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q21",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q22",
+    "expected": "C",
+    "agent_response": "A",
+    "agent_passed": false,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": false,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q23",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q24",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q25",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q26",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q27",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q28",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q29",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q30",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q31",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q32",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q33",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q34",
+    "expected": "B",
+    "agent_response": "C",
+    "agent_passed": false,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": false,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q35",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q36",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q37",
+    "expected": "B",
+    "agent_response": "A",
+    "agent_passed": false,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "estate_planning",
+      "tax_optimization",
+      "investment_allocation"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": false,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q38",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q39",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q40",
+    "expected": "C",
+    "agent_response": "A",
+    "agent_passed": false,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": false,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q41",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q42",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q43",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q44",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q45",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q46",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q47",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q48",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q49",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q50",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q51",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q52",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q53",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization",
+      "investment_allocation",
+      "estate_planning"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q54",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q55",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q56",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q57",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q58",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "estate_planning",
+      "investment_allocation",
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q59",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q60",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": false,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q61",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "investment_allocation",
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q62",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q63",
+    "expected": "A",
+    "agent_response": "C",
+    "agent_passed": false,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q64",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q65",
+    "expected": "C",
+    "agent_response": "C",
+    "agent_passed": true,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization",
+      "investment_allocation"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": true,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q66",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization",
+      "estate_planning"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q67",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q68",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q69",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q70",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q71",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": false,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q72",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q73",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q74",
+    "expected": "A",
+    "agent_response": "A",
+    "agent_passed": true,
+    "agent_full_answer": "A",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "A",
+    "direct_passed": true,
+    "direct_full_answer": "A",
+    "direct_error": null
+  },
+  {
+    "id": "q75",
+    "expected": "A",
+    "agent_response": "C",
+    "agent_passed": false,
+    "agent_full_answer": "C",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "C",
+    "direct_passed": false,
+    "direct_full_answer": "C",
+    "direct_error": null
+  },
+  {
+    "id": "q76",
+    "expected": "B",
+    "agent_response": "B",
+    "agent_passed": true,
+    "agent_full_answer": "B",
+    "agent_modules_used": [
+      "tax_optimization",
+      "estate_planning"
+    ],
+    "agent_error": null,
+    "direct_response": "B",
+    "direct_passed": true,
+    "direct_full_answer": "B",
+    "direct_error": null
+  },
+  {
+    "id": "q77",
+    "expected": "B",
+    "agent_response": "D",
+    "agent_passed": false,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": false,
+    "direct_full_answer": "D",
+    "direct_error": null
+  },
+  {
+    "id": "q78",
+    "expected": "D",
+    "agent_response": "D",
+    "agent_passed": true,
+    "agent_full_answer": "D",
+    "agent_modules_used": [
+      "tax_optimization"
+    ],
+    "agent_error": null,
+    "direct_response": "D",
+    "direct_passed": true,
+    "direct_full_answer": "D",
+    "direct_error": null
+  }
+]

@@ -38,6 +38,35 @@ class TestRequest(BaseModel):
     """Request for standardized testing: no user profile required."""
     message: str = Field(..., description="Question or prompt to send to the agent")
 
+class DirectTestResponse(BaseModel):
+    """Response from the direct (no-RAG, no-agent) test endpoint."""
+    response: str = Field(..., description="Normalized letter answer (A/B/C/D)")
+    raw_answer: str = Field(..., description="Full model output before normalization")
+
+class ScenarioTestRequest(BaseModel):
+    """Request for scenario-based open-ended testing with a custom user profile."""
+    profile: UserProfile
+    question: str = Field(..., description="Open-ended planning question to ask the agent")
+
+class ScenarioTestResponse(BaseModel):
+    """Response from the scenario test endpoint."""
+    response: str = Field(..., description="Agent's full recommendation")
+    breakdown: Dict[str, Any]
+    evidence: List[Dict[str, Any]]
+    modules_used: List[str]
+
+class JudgeRequest(BaseModel):
+    """Request to the LLM judge endpoint."""
+    response: str = Field(..., description="The agent response to evaluate")
+    rubric: str = Field(..., description="Grading rubric describing what a good answer must cover")
+    max_response_chars: int = Field(default=3000, description="Truncate response to this many chars before judging")
+
+class JudgeResponse(BaseModel):
+    """Result from the LLM judge endpoint."""
+    score: Optional[int] = Field(..., description="Score 1-10, or null on failure")
+    justification: Optional[str] = Field(..., description="One-sentence reason for the score")
+    provider: str = Field(..., description="LLM provider used for judging")
+
 class ProfileRequest(BaseModel):
     session_id: str
     profile: UserProfile

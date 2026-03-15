@@ -7,7 +7,9 @@ from app.config import settings
 from app.models import (
     ChatRequest, ChatResponse, ChatMessage,
     ProfileRequest, ProfileResponse, UserProfile,
-    TestRequest,
+    TestRequest, DirectTestResponse,
+    ScenarioTestRequest, ScenarioTestResponse,
+    JudgeRequest, JudgeResponse,
 )
 from app.agent.orchestrator import family_office_agent
 from app.memory.store import memory_store
@@ -214,6 +216,124 @@ async def standardized_test(request: TestRequest):
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Test endpoint error: {type(e).__name__}: {str(e)}")
+    finally:
+        memory_store.clear_session(session_id)
+
+
+DIRECT_MC_SYSTEM = (
+    "You are a US tax and finance expert. "
+    "Answer the multiple-choice question with ONLY the single letter of the correct answer: A, B, C, or D. "
+    "No explanation, no other text."
+)
+
+
+@app.post("/test/direct", response_model=DirectTestResponse)
+async def direct_test(request: TestRequest):
+    """
+    Baseline test endpoint: bypasses the RAG pipeline and agent entirely.
+    The question is sent directly to the LLM with only a system prompt.
+    Use this to compare against /test (RAG + agent) results.
+    """
+    import re as _re
+    question = request.message.strip()
+    messages = [
+        {"role": "system", "content": DIRECT_MC_SYSTEM},
+        {"role": "user", "content": question},
+    ]
+    try:
+        from app.llm.client import llm_client
+        raw = llm_client.generate(messages, temperature=0, max_tokens=256, disable_thinking=True)
+        raw = raw or ""
+        text = raw.strip().upper()
+        m = _re.search(r"\b([A-D])\b", text)
+        letter = m.group(1) if m else (text[:1] if text else "?")
+        return DirectTestResponse(response=letter, raw_answer=raw)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Direct test error: {type(e).__name__}: {str(e)}")
+
+
+LLM_JUDGE_PROMPT = """\
+You are an expert evaluator of financial planning advice.
+
+GRADING RUBRIC:
+{rubric}
+
+AGENT RESPONSE TO EVALUATE:
+{response}
+
+Score the agent response on a scale of 1 to 10 based on the rubric:
+- 10: Fully addresses all rubric criteria with specific, accurate details
+- 7-9: Addresses most criteria, minor gaps or inaccuracies
+- 4-6: Partially addresses criteria, missing important concepts
+- 1-3: Largely misses the criteria, vague or incorrect
+
+Reply with ONLY a JSON object in this exact format:
+{{"score": <1-10 integer>, "justification": "<one sentence reason>"}}
+"""
+
+
+@app.post("/judge", response_model=JudgeResponse)
+async def llm_judge(request: JudgeRequest):
+    """
+    LLM-as-judge endpoint: evaluates an agent response against a rubric.
+    Uses whatever LLM provider is configured (Gemini by default).
+    Returns a score 1-10 and a one-sentence justification.
+    """
+    import json as _json
+    import re as _re
+    from app.llm.client import llm_client
+
+    truncated = request.response[:request.max_response_chars]
+    prompt = LLM_JUDGE_PROMPT.format(rubric=request.rubric, response=truncated)
+    messages = [
+        {"role": "system", "content": "You are a strict but fair financial planning evaluator."},
+        {"role": "user", "content": prompt},
+    ]
+    try:
+        raw = llm_client.generate(messages, temperature=0, max_tokens=256, disable_thinking=True)
+        raw = (raw or "").strip()
+        raw = _re.sub(r"^```(?:json)?\s*", "", raw, flags=_re.IGNORECASE)
+        raw = _re.sub(r"\s*```\s*$", "", raw)
+        data = _json.loads(raw)
+        return JudgeResponse(
+            score=int(data.get("score", 0)),
+            justification=str(data.get("justification", "")),
+            provider=llm_client.provider,
+        )
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Judge error: {type(e).__name__}: {str(e)}")
+
+
+@app.post("/test/scenario", response_model=ScenarioTestResponse)
+async def scenario_test(request: ScenarioTestRequest):
+    """
+    Scenario-based open-ended test endpoint.
+    Accepts a full user profile + an open-ended question.
+    Runs the full RAG + agent pipeline (no MC prefix, no letter extraction).
+    Each call is stateless — a throwaway session is created then discarded.
+    """
+    session_id = str(uuid.uuid4())
+    try:
+        memory_store.create_session(session_id, request.profile.model_dump())
+        result = family_office_agent.process_query(session_id, request.question.strip())
+        if "error" in result:
+            raise HTTPException(status_code=400, detail=result["error"])
+        return ScenarioTestResponse(
+            response=result["response"],
+            breakdown=result["breakdown"],
+            evidence=result["evidence"],
+            modules_used=result["modules_used"],
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Scenario test error: {type(e).__name__}: {str(e)}")
     finally:
         memory_store.clear_session(session_id)
 
