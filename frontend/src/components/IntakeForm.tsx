@@ -9,10 +9,13 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({ onSubmit }) => {
   const [step, setStep] = useState(1);
   const [profile, setProfile] = useState<Partial<UserProfile>>({
     age: 45,
-    income: 0,
-    filing_status: 'single',
+    income: 500000,
+    filing_status: 'married',
     state: 'NY',
-    assets: {},
+    assets: {
+      cash: 2000000,
+      stocks: 1000000,
+    },
     family: {},
     life_events: [],
     goals: [],
@@ -210,19 +213,6 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({ onSubmit }) => {
             <h2>Family & Life Events</h2>
             
             <div className="form-group">
-              <label>Marital Status</label>
-              <select
-                value={profile.family?.marital_status || 'single'}
-                onChange={(e) => updateFamily('marital_status', e.target.value)}
-              >
-                <option value="single">Single</option>
-                <option value="married">Married</option>
-                <option value="divorced">Divorced</option>
-                <option value="widowed">Widowed</option>
-              </select>
-            </div>
-
-            <div className="form-group">
               <label>Number of Children</label>
               <input
                 type="number"
@@ -236,7 +226,7 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({ onSubmit }) => {
             <div className="form-group">
               <label>Recent Life Events (select all that apply)</label>
               <div className="checkbox-group">
-                {['marriage', 'divorce', 'birth', 'adoption', 'business_sale', 'inheritance', 'retirement'].map(event => (
+                {['marriage', 'divorce', 'widowed', 'birth', 'adoption', 'business_sale', 'inheritance', 'retirement'].map(event => (
                   <label key={event} className="checkbox-label">
                     <input
                       type="checkbox"

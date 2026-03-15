@@ -171,6 +171,39 @@ After each query, you'll see:
   - Estate planning triggers and structures
 - **Supporting Evidence**: Source documents used in analysis
 
+### 4. Query from CLI (no browser)
+
+With the **backend** running, you can talk to the agent from the terminal.
+
+**One-shot (single question):**
+```bash
+cd backend
+python scripts/query_agent.py "What tax strategies should I consider in California?"
+```
+
+**Interactive (conversation in the terminal):**
+```bash
+cd backend
+python scripts/query_agent.py
+# Then type your questions; empty line to quit.
+```
+
+**Using curl (one-shot):** create a session, create a profile, then POST to `/chat`. Example with a minimal profile:
+```bash
+# Create session
+SID=$(curl -s -X POST http://localhost:8000/session/new | python3 -c "import sys,json; print(json.load(sys.stdin)['session_id'])")
+# Send one message (profile is created automatically from the body)
+curl -s -X POST http://localhost:8000/chat -H "Content-Type: application/json" \
+  -d "{\"session_id\":\"$SID\",\"message\":\"What are good estate planning steps?\",\"user_profile\":{\"age\":50,\"income\":1000000,\"filing_status\":\"married\",\"state\":\"NY\",\"assets\":{},\"family\":{},\"life_events\":[],\"goals\":[],\"investment_goals\":[],\"estate_goals\":[],\"risk_tolerance\":\"moderate\",\"time_horizon\":\"long-term\"}}" \
+  | python3 -m json.tool
+```
+
+**Run the full demo (predefined scenario):**
+```bash
+cd backend
+python demo.py
+```
+
 ## Verify Everything Works
 
 ### Backend Health Check
@@ -257,7 +290,7 @@ PYTHONPATH=./vendor:$PYTHONPATH python3 scripts/process_irs_pubs.py
 ```
 The script extracts text, chunks into 300–500 word segments, adds `publication` and `section` metadata, and appends to `data/corpus/tax_knowledge.jsonl` (target 30–40 additional docs; cap is set in the script).
 
-Restart backend to rebuild vector stores.
+**Vector store (FAISS):** Indices are cached in `backend/data/faiss_index/`. The first run (or after you add/change corpus files) builds and saves them; later restarts load from cache for fast startup. To force a full rebuild after editing corpus, delete that folder and restart the backend.
 
 ### Switch LLM Provider
 

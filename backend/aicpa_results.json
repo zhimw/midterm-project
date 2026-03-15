@@ -1,0 +1,60 @@
+[
+  {
+    "id": "q01",
+    "ok": true,
+    "expected": "C",
+    "passed": true,
+    "response": "C",
+    "modules_used": [
+      "tax_optimization",
+      "investment_allocation",
+      "estate_planning"
+    ]
+  },
+  {
+    "id": "q02",
+    "ok": true,
+    "expected": "D",
+    "passed": false,
+    "response": "A",
+    "modules_used": [
+      "tax_optimization",
+      "investment_allocation",
+      "estate_planning"
+    ]
+  },
+  {
+    "id": "q03",
+    "ok": true,
+    "expected": "C",
+    "passed": false,
+    "response": "?",
+    "modules_used": [
+      "tax_optimization"
+    ]
+  },
+  {
+    "id": "q04",
+    "ok": true,
+    "expected": "C",
+    "passed": true,
+    "response": "C",
+    "modules_used": [
+      "tax_optimization",
+      "investment_allocation",
+      "estate_planning"
+    ]
+  },
+  {
+    "id": "q05",
+    "ok": true,
+    "expected": "C",
+    "passed": true,
+    "response": "C",
+    "modules_used": [
+      "tax_optimization",
+      "investment_allocation",
+      "estate_planning"
+    ]
+  }
+]

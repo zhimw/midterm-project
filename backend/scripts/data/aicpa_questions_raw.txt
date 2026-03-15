@@ -1,0 +1,764 @@
+Which of the following is the primary source of Federal Tax Law?
+
+A. The Internal Revenue Code of 1939
+B. Treasury Regulations
+C. The Internal Revenue Code of 1986
+D. The Internal Revenue Bulletin
+C. The Internal Revenue Code of 1986
+
+
+When a revenue ruling conflicts with a revenue procedure, which of the two tax authorities has precedence?
+
+A. Revenue ruling
+B. The one established first
+C. Revenue procedure
+D. The most recently established
+D. The one most recently established
+
+
+In order to show that a tax preparer's application of tax law was in line with the intent of the tax law, the preparer should cite which of the following types of authoritative sources to make the most convincing case?
+
+A. An IRS publication
+B. Technical advice memorandum of another, similar case
+C. Committee report
+D. Delegation order
+C. Committee report
+
+
+
+Which of the following statements with respect to revenue rulings and revenue procedures is false?
+
+A. Revenue procedures are official statements of procedures that either affect the rights or duties of taxpayers or other members of the public or should be a matter of public knowledge
+B. The purpose of revenue rulings is to promote uniform application of the tax laws
+C. Taxpayers cannot appeal adverse return examination decisions based on revenue rulings and revenue procedures to the courts
+D. IRS employees must follow revenue rulings and revenue procedures
+C. Taxpayers cannot appeal adverse return examination decisions based on revenue rulings and revenue procedures to the courts
+
+
+To research whether the Internal Revenue Service has announced an opinion on a Tax Court decision, refer to which of the following references for the original announcement?
+
+A. Circular 230
+B. Federal Register
+C. Internal Revenue Bulletin
+D. Tax Court Reports
+C. Internal Revenue Bulletin
+
+
+A taxpayer understated the tax liability by $10,000. The total tax liability was $50,000. No disclosure of the return position was made by the taxpayer; however, the basis for the position is reasonable. How much of an accuracy-related penalty will the taxpayer be assessed?
+
+A. $0
+B. $1,000
+C. $2,000
+D. $10,000
+C. $2,000 (10,000 understatement * 20%)
+
+
+Keen, a calendar-year taxpayer, reported gross income of $100,000 on his 2020 income tax return. Inadvertently omitted from gross income was a $20,000 commission that should have been included in 2020. Keen filed his 2020 return on March 17, 2021. To collect the tax on the $20,000 omission, the Internal Revenue Service must assert a notice of deficiency no later than
+
+A. March 17, 2024
+B. April 15, 2024
+C. March 27, 2027
+D. April 15, 2027
+B. April 15, 2024
+
+
+A taxpayer filed his income tax return after the due date but neglected to file an extension form. The return indicated a tax liability of $50,000 and taxes withheld of $45,000. On what amount is the penalties for late filing and late payment computed?
+
+A. $0
+B. $5,000
+C. $45,000
+D. $50,000
+B. $5,000 (difference between 50,000 and 45,000)
+
+
+A claim for refund of erroneously paid income taxes, filed by an individual before the statute of limitations expires, must be submitted on Form
+
+A. 1139
+B. 1045
+C. 1040X
+D. 843
+C. 1040X
+
+
+Krete is an unmarried taxpayer with income exclusively from wages. By December 31, Year 1, Krete's employer had withheld $16,000 in federal income taxes, and Krete had made no estimated tax payments. On April 15, Year 2, Krete timely filed an extension request to file her individual tax return and paid $300 of additional taxes. Krete's Year 1 income tax liability was $16,500 when she timely filed her return on April 30, Year 2, and paid the remaining income tax liability balance. What amount is subject to the penalty for the underpayment of estimated taxes?
+
+A. $0
+B. $500
+C. $1,650
+D. $16,500
+A. $0
+
+
+Company A, a US company, deducted costs from research and development of a product in the US, then licensed rights to the product to a foreign subsidiary in a lower tax jurisdiction. The subsidiary then manufactured the product and sold each unit back to Company A (the parent company). This is an example of which tax planning technique?
+
+A. Timing of income/deductions
+B. Shifting of income
+C. Conversion of income property
+D. Deferral of income
+B. Shifting of income
+
+
+Utilizing MACRS depreciation (accelerating the depreciation deduction) instead of electing straight-line depreciation is an example of which tax planning technique?
+
+A. Conversion
+B. Shifting
+C. Timing
+D. Assignment
+C. Timing
+
+
+A husband and wife can file a joint return even if
+
+A. The spouses have different tax years, provided that both spouses are alive at the end of the year
+B. The spouses have different accounting methods
+C. Either spouse was a nonresident alien at any time during the tax year, provided that at least one spouse makes the proper election
+D. They were divorced before the end of the tax year
+B. The spouses have different accounting methods
+
+
+Which of the following, if any, are among the requirements to enable a taxpayer to be classified as a "qualifying widow(er)"
+
+I. A dependent has lived with the taxpayer for 6 months
+II. The taxpayer has maintained the cost of the principal residence for 6 months
+
+A. I only
+B. II only
+C. Both I and II
+D. Neither I nor II
+D. Neither I nor II
+
+
+A taxpayer's spouse dies in August of the current year. Which of the following is the taxpayer's filing status for the current year?
+
+A. Single
+B. Qualifying widow(er)
+C. Head of household
+D. Married filing jointly
+D. Married filing jointly
+
+
+A couple filed a joint return in prior tax years. During the current tax year, one spouse died. The couple has no dependent children. What is the filing status available to the surviving spouse for the first subsequent tax year?
+
+A. Qualifying widow(er)
+B. Married filing separately
+C. Single
+D. Head of household
+C. Single
+
+
+For head of household filing status, which of the following costs are considered in determining whether the taxpayer has contributed more than one-half the cost of maintaining the household?
+
+Food consumed in the home // Value of services rendered in the home by the taxpayer
+
+A. yes//yes
+B. no//no
+C. yes//no
+D. no//yes
+C. yes//no
+
+
+Jim and Kay Ross contributed to the support of their two children, Dale and Kim, and Jim's widowed parent, Grant. For Year 27, Dale, a 19-year-old full-time college student, earned $4,500 as a babysitter. Kim, a 23-year-old bank teller, earned $12,000. Grant received $5,000 in dividend income and $4,000 in nontaxable Social Security benefits. Grant and Kim are U.S. citizens and were over one-half supported by Jim and Kay, but neither of the two currently reside with Jim and Kay. Dale's main place of residence is with Jim and Kay, and he is currently on a temporary absence to attend school. How many exemptions can Jim and Kay claim on their Year 27 joint income tax return?
+
+A. 2
+B. 1
+C. 3
+D. 5
+B. 1 (only Dale)
+
+
+In evaluating the hierarchy of authority in tax law, which of the following carries the greatest authoritative value for tax planning of transactions?
+
+A. Internal Revenue Code
+B. IRS regulations
+C. Tax Court decisions
+D. IRS agents' reports
+A. Internal Revenue Code
+
+
+In 2020, Sam Dunn provided more than half the support for his wife, his father's brother, and his cousin. Sam's wife was the only relative who was a member of Sam's household. None of the relatives had any income, nor did any of them file an individual or a joint return. All of these relatives are US citizens. Which of these relatives should be claimed as a dependent or dependents by Sam for the 2020 joint return?
+
+A. His wife, his father's brother, and his cousin
+B. Only his wife
+C. Only his cousin
+D. Only his father's brother
+D. Only his father's brother
+
+
+Chris Baker's adjusted gross income on her 2019 tax return was $160,000, which covered a 12 month period. For the 2020 tax year, Baker may avoid the penalty for the underpayment of estimated tax if the timely estimated tax payments equal the required annual amount of
+I. 90% of the tax on the return for the current year, paid in four equal installments
+II. 110% of the prior year's tax liability, paid in four equal installments
+
+A. Neither I nor II
+B. Either I or II
+C. II only
+D. I only
+B. Either I or II
+
+
+
+Jim Planter, who reached age 65 on January 1, 2020, filed a joint return for 2020 with his wife, Rita, who is 50 years old and legally blind. Mary, their 21-year-old daughter, was a full-time student at a college until her graduation on June 2, 2020. The daughter had $6,650 of income and provided 25% of her own support during 2020. In addition, during 2020, the Planters were the sole support for Rita's niece, who had no income. How many dependents should the Planters claim on their 2020 tax return?
+
+A. 1
+B. 0
+C. 2
+D. 3
+C. 2 (Mary and Rita's niece)
+
+
+Emil Gow's wife died in Year 1. Emil did not remarry and continued to maintain a home for himself and his dependent infant child during Year 2 and Year 3, providing full support for himself and his child. For Year 1, Emil properly filed a joint return. For Year 3, Emil's filing status is
+
+A. Married filing joint return
+B. Qualifying widower
+C. Single
+D. Head of household
+B. Qualifying widower
+
+
+Sara Hance, who is single and lives alone in Idaho, has no income of her own and is supported in full by the following persons:
+
+Alma (an unrelated friend): $2,400 of support (48% of total)
+Ben (Sara's brother): $2,150 of support (43% of total)
+Carl (Sara's son): $450 of support (9% of total)
+Total: $5,000 (100%)
+
+Under a multiple support agreement, Sara can be claimed as a dependent by:
+
+A. Alma
+B. Ben
+C. Carl
+D. No one
+B. Ben
+
+
+In which of the following situations may taxpayers file as married filing jointly:
+
+A. Taxpayers who were legally separated but lived together for the entire year
+B. Taxpayers who were married but lived under a legal separation agreement at the ed of the year
+C. Taxpayers who were divorced during the year
+D. Taxpayers who were married but lived apart during the year
+D. Taxpayers who were married but lived apart during the year
+
+
+In Year 6, an IRS agent completed an examination of a corporation's Year 5 tax return and proposed an adjustment that will result in an increase in taxable income for each of Years 1 through Year 5. All returns were filed on the original due date. The proposed adjustment relates to the disallowance of corporate jet usage for personal reasons. The agent does not find the error to be fraudulent or substantial in nature. Which of the following statements regarding this adjustment is correct?
+
+A. The adjustment is improper because an agent may only propose adjustments to the year under examination
+B. The adjustment is proper because it relates to a change in accounting method, which can be made retroactively, irrespective of the statute of limitations
+C. The adjustment is improper because the statute of limitations has expired for several years of the adjustment
+D. The adjustment is proper because there is no statute of limitations for improper claiming personal expenses as business expenses
+C. The adjustment is improper because the statute of limitations has expired for several years of the adjustment
+
+
+Sam's Year 2 taxable income was $175,000 with a corresponding tax liability of $30,000. For Year 3, Sam expects taxable income of $250,000 and a tax liability of $50,000. In order to avoid a penalty for underpayment of estimated tax, what is the minimum amount of Year 3 estimated tax payments that Sam can make?
+
+A. $33,000
+B. $45,000
+C. $50,000
+D. $30,000
+A. $33,000 (110% of prior year's tax)
+
+
+Which of the following statements is false with respect to the United States Tax Court?
+
+A. It is authorized by the Internal Revenue Code but is entirely separate from the Internal Revenue Service
+B. It is based in Washington DC
+C. Its regular decisions are printed in bound volumes by the government
+D. It has jurisdiction over all federal taxes
+D. It has jurisdiction over all federal taxes
+
+
+Which of the following is an evasion of tax?
+
+A. Paying reasonable wages to a child hired into the family business
+B. Purchasing tax exempt bonds instead of taxable private activity bonds
+C. A parent reporting his or her own taxable income on a child's tax return
+D. Paying employee wages in cash
+C. A parent reporting his or her own taxable income on a child's tax return
+
+
+Jackson Corp, a calendar-year S corporation, mailed its 2020 tax return to the Internal Revenue Service by certified mail on March 7, 2021. The return, postmarked March 7, 2021, was delivered to the Internal Revenue Service on March 19, 2021. Excluding weekends and holidays, the statute of limitations on Jackson's corporate tax return begins on
+
+A. March 16, 2021
+B. December 31, 2020
+C. March 19, 2021
+D. March 7, 2021
+A. March 16, 2021
+
+
+
+A CPA is researching a tax issue and is attempting to understand the intent of Congress. Which of the following would generally be least useful for that purpose?
+
+A. The Congressional Record
+B. A Committee Report of the House Ways and Means Committee
+C. A Senate Finance Committee Report
+D. A Notice of Proposed Rulemaking
+D. A Notice of Proposed Rulemaking
+
+
+Which of the following is a list of courts that are referred to as courts of original jurisdiction, or trial courts, for tax matters?
+
+A. The Tax Court, The US District Court, and the US Supreme Court
+B. The Tax Court, the US District Court, and the US Court of Federal Claims
+C. The US District Court, the US Court of Federal Claims, and the US Court of Appeals
+D. The Tax Court, the US Court of Federal Claims, and the US Court of Appeals
+B. The Tax Court, the US District Court, and the US Court of Federal Claims
+
+Books of account or records sufficient to establish the amount of gross income, deductions, credit, or other matters required to be shown in any tax or information return
+
+A. must be maintained as long as the contents may be material in administration of any internal revenue law
+B. Do not need to be kept
+C. Must be maintained for at least 4 years after the due date of the return or payment of tax
+D. Must be maintained forever
+A. must be maintained as long as the contents may be material in administration of any internal revenue law
+
+
+Harold Thompson, a self-employed individual, had income transactions for Year 1 (duly reported on his return filed in April Year 2) as follows:
+
+Gross Receipts $400,000
+Less: COGS and deductions ($320,000)
+Net business income $80,000
+Capital Gains $36,000
+Gross Income $116,000
+
+In March Year 5, Thompson discovers that he had inadvertently omitted some income on his Year 1 return. He retains Mann, CPA, to determine his position under the statute of limitations. Mann should advise Thompson that the 6 year statute of limitations would apply to his Year 1 return only if he omitted from gross income an amount in excess of
+
+A. $20,000
+B. $109,000
+C. $29,000
+D. $100,000
+B. $109,000 The normal statute of limitations is 3 years after the return was filed. A 6-year statute of limitations applies if gross income omitted from the return exceeds 25% of gross income reported on the return. For a trade or business, gross income means the total of the amounts received from the sale of goods before deductions and cost of goods sold. (NOTE: There are other provisions in the tax laws where gross income includes a reduction for cost of goods sold.) The 6-year statute of limitations will apply if Thompson omitted from gross income an amount in excess of $109,000 [($400,000 + $36,000) × 25%].
+
+
+On April 15, 2021, a married couple filed their joint 2020 calendar-year return showing gross income of $120,000. Their return had been prepared by a professional tax preparer who mistakenly omitted $45,000 of income, which the preparer in good faith considered to be nontaxable. No information with regard to this omitted income was disclosed on the return or attached statements. By what date must the Internal Revenue Service assert a notice of deficiency before the statute of limitations expires?
+
+A. April, 15 2024
+B. April 15, 2027
+C. December 31, 2026
+D. December 31, 2023
+B. April 15, 2027
+
+
+Which of the following is not considered a primary authoritative source when conducting tax research?
+
+A. Tax Court cases
+B. Internal Revenue Code
+C. IRS publications
+D. Treasury Regulations
+C. IRS publications
+
+
+Which of the following is published by the IRS in the IRB when temporary guidance of a substantive or procedural nature is needed quickly?
+
+A. Notice
+B. Announcement
+C. Delegation order
+D. Citator
+B. Announcement
+
+
+Which of the following is not a situation in which taxes may be assessed without the issuance of a statutory notice of deficiency?
+
+A. Overstatement of a prepayment credit on a return
+B. Waiver of restrictions on assessment
+C. Mathematical error on a return
+D. Failure of the taxpayer to file a return
+D. Failure of the taxpayer to file a return
+
+
+Chris, age 5, has $3,600 of interest income and no earned income in 2020. Assume the current applicable standard deduction is $1,100, how much of Chris' income will be subject to the Kiddie Tax?
+
+A. $2,500
+B. $1,400
+C. $3,600
+D. $0
+B. $1,400 Net unearned income of a dependent child is taxed to the dependent at the higher marginal rate of the child's parent. Net unearned income is unearned income minus the sum of
+$1,100 (first $1,100 clause)
+Greater of (a) $1,100 of the standard deduction or $1,100 of itemized deductions or (b) the amount of allowable deductions directly connected with the production of unearned income
+Chris's net unearned income is $1,400 [$3,600 unearned income - ($1,100 + $1,100 std. ded.)]
+
+
+
+For 2020, all of the following situations qualify as exceptions to the penalty for underpayment of estimated tax except
+
+A. The taxes shown as owed on the return are no more than 10% of the total 2020 tax, all required estimated tax payments were made on time
+B. Total tax shown on the return minus withholdings is less than $1,000
+C. An employee taxpayer's estimated tax payments were 100% of that shown on the 2019 return, and last year's AGI was $160,000
+D. A US citizen paid no estimated tax because he had no tax liability in the preceding year and the year was a 12 month period
+C. An employee taxpayer's estimated tax payments were 100% of that shown on the 2019 return, and last year's AGI was $160,000
+
+
+A taxpayer contemplates entering into a complex transaction. The taxpayer wants assurance that there will be no adverse tax effects from the transaction. The taxpayer should apply for which of the following
+
+A. General counsel memorandum (GCM)
+B. Technical advice memorandum (TAM)
+C. Revenue ruling
+D. Private letter ruling (PLR)
+D. Private letter ruling (PLR)
+
+
+With regard to the statute of limitations, all of the following statements apply to requests to extend the statute. All of the statements are true except
+
+A. An omission of items of more than 25%of gross income extends the assessment period to 6 years
+B. If tax has been assessed within the 3 year limitation period, the IRS generally has 10 years following the assessment to collect the tax by levy or in a court proceeding
+C. The 10 year collection period may not be extended after it has expired, even if there has been a levy on any part of the taxpayer's property prior to the expiration and the extension is agreed to in writing before the levy is released
+D. Each time an extension is requested, the IRS must notify the taxpayer that the taxpayer may refuse to extend the period of limitations or may limit the extension to particular issues or to a particular period of time
+C. The 10 year collection period may not be extended after it has expired, even if there has been a levy on any part of the taxpayer's property prior to the expiration and the extension is agreed to in writing before the levy is released
+
+
+
+A corporation's tax year can be reopened after all statutes of limitations have expired if
+I. The tax return has a 50% nonfraudulent omission from gross income
+II. The corporation prevails in determination allowing a deduction in an open tax year that was taken erroneously in a closed tax year
+
+A. Both I and II
+B. I only
+C. II only
+D. Neither I nor II
+C. II only
+
+
+A calendar-year C corporation received an automatic extension of time for filing its Year 1 return by submitting an application on Form 7004. On what date is the corporation's return due?
+
+A. April 15, Year 2
+B. August 15, Year 2
+C. October 15, Year 2
+D. October 30, Year 2
+C. October 15, Year 2
+
+
+Which of the following are useful tools in determining Congressional intent behind certain tax laws and helping examiners apply the law properly?
+
+A. Revenue rulings
+B. Treasury regulations
+C. Committee reports
+D. Revenue procedures
+C. Committee reports
+
+
+A taxpayer wishing to reverse the US Tax Court's ruling would appeal to which of these courts?
+
+A. US Court of Appeals for the Federal Circuit
+B. US Court of Federal Claims
+C. US Circuit Court of Appeals
+D. US District Court
+C. US Circuit Court of Appeals
+
+
+A statutory notice of deficiency explains that the taxpayer has 90 to either pay the deficiency or else to file a
+
+A. Petition with the US Tax Court
+B. Claim for refund
+C. Protest and request a conference with an appeals officer
+D. Petition with the taxpayer's US District Court
+A. Petition with the US Tax Court
+
+
+Sam Johnson, a calendar year taxpayer, applied for an received an extension for filing his Year 1 tax return. Mr. Johnson filed his tax return on June 2 of Year 2 and paid the balance due. The return reflected a tax liability of $50,000 and estimated tax payments made timely of $45,000. Based on these facts, Mr. Johnson owes
+
+failure to file penalty//failure to pay penalty
+
+A. $500//$50
+B. $0//$50
+C.$250//$25
+D.$0//$25
+B. $0//$50 Payment of tax is due by the due date for filing a tax return. The tax return is due April 15th for a calendar-year taxpayer. Since Mr. Johnson received an extension to file his tax return and filed it before the end of the extension period, there is no failure to file penalty.
+The penalty for failure to pay tax is 0.5% of the amount due for each month (or fraction thereof) during which such tax remains unpaid. The maximum penalty under this provision is 25% (Sec. 6651). Mr. Johnson's failure to pay penalty is computed as follows:
+Additional tax due on return
+$5,000
+Penalty rate per month
+× .005
+Penalty for 1 month
+$ 25
+Number of months past due
+× 2
+Failure to pay penalty
+$ 50
+The failure to pay penalty is computed only on the amount of tax due. There is no penalty for failure to pay estimated taxes because 90% of the total tax shown on the current-year return was paid as estimated payments during the year.
+
+
+All of the following statements concerning court appeals and court petitions are true except
+
+A. If a taxpayer's claim for refund is denied by the Internal Revenue Service or if no decision is made in 6 months, the taxpayer may petition either the US Court of Federal Claims or the US Circuit Court of Appeals
+B. Both the taxpayer and the government may appeal decisions of the Tax Court or a district court to the appropriate circuit court of appeals
+C. For federal tax purposes, the most common type of case that the US Supreme Court hears is one in which a federal tax statute is ruled to be invalid
+D. The decisions of courts of appeal and some decisions of other federal courts may be reviewed by the US Supreme Court
+A. If a taxpayer's claim for refund is denied by the Internal Revenue Service or if no decision is made in 6 months, the taxpayer may petition either the US Court of Federal Claims or the US Circuit Court of Appeals
+
+
+A taxpayer understated the tax liability by $10,000. The total tax liability was $50,000. No disclosure of the return position was made by the taxpayer; however, the basis for the position is reasonable. How much of an accuracy-related penalty will the taxpayer be assessed?
+
+A. $10,000
+B. $0
+C. $2,000
+D. $1,000
+C. $2,000 A taxpayer's accuracy-related penalty due to disregard of rules and regulations, or substantial understatement of income tax, may be avoided if the return position is adequately disclosed and has a reasonable basis. Generally, the penalty is equal to 20% of the underpayment. Substantial understatement of income tax occurs when the understatement is more than the larger of 10% of the correct tax ($5,000 is 10% of the correct tax) or $5,000. This taxpayer failed to adequately disclose or achieve substantial authority for the return position. The penalty is $2,000 ($10,000 understatement × 20%).
+
+
+A married couple filed their joint 2020 calendar-year return on March 15, 2021, and attached a check for the balance of tax due as shown on the return. On June 15, 2021, the couple discovered that they had failed to include $2,000 of home mortgage interest in their itemized deductions. In order for the couple to recover the tax that they would have saved by using the $2,000 deduction, they must file an amended return no later than
+
+A. April 15, 2024
+B. June 15, 2024
+C. March 15, 2024
+D. December 31, 2023
+A. April 15, 2024
+
+
+A tax return preparer is researching authorities to support a position of deferral of gain taken on the disposal of an asset. Which of the following will provide the highest authority for this position?
+
+A. A temporary regulation issued by the Treasury Department
+B. An opinion rendered by a tax professional
+C. A conclusion reached in a legal periodical
+D. A private letter ruling issued to another taxpayer
+A. A temporary regulation issued by the Treasury Department
+
+Which of the following statements with respect to revenue rulings and revenue procedures is false?
+
+A. IRS employees must follow revenue rulings and revenue procedures
+B. The purpose of revenue rulings is to promote uniform application of tax laws
+C. Taxpayers cannot appeal adverse return examination decisions based on revenue rulings and revenue procedures to the courts
+D. Revenue procedures are official statements of procedures that either affect the rights or duties of taxpayers or other members of the public or should be a matter of public knowledge
+C. Taxpayers cannot appeal adverse return examination decisions based on revenue rulings and revenue procedures to the courts
+
+
+What is the term for an order by the US Supreme Court to hear a case on appeal from a lower court?
+
+A. Dictum
+B. Delegation order
+C. Writ of certiorari
+D. Revenue procedure
+C. Writ of certiorari
+
+
+Which of the following is not treated as a prepayment of tax?
+
+A. Overpayment of prior year tax
+B. Penalty for prior year underpayment of tax
+C. A direct payment by the individual
+D. Excess FICA withholdings due to having multiple employers
+B. Penalty for prior year underpayment of tax
+
+
+An IRS agent has sent a 30 day letter reflecting a proposed adjustment to increase a client's taxable income in 3 prior years.The CPA and the client have reviewed the proposed changes and agree with the proposed adjustment. What would be the CPA's most appropriate recommendation to the client?
+
+A. Pay the tax, then file an appeal with the IRS Appeals Division
+B. Accept the proposed IRS changes and pay any deficiency
+C. File an amended federal tax return along with payment of any deficiency
+D. File an offer in compromise
+B. Accept the proposed IRS changes and pay any deficiency
+
+
+An individual taxpayer's tax return included the following:
+
+Regular tax before tax credits $5,000
+Current-year estimated tax payments $6,000
+Amount paid with current-year extension $1,000
+Federal income tax withheld $1,000
+
+What amount, if any, is the taxpayer's overpayment?
+
+A. $2,000
+B. $1,000
+C. $0
+D. $3,000
+D. $3,000
+
+
+Which of the following statements best describes the applicability of a constitutionally valid Internal Revenue Code section on the various courts?
+
+A. Only the Supreme Court is not bound to follow the Code section.All other courts are bound to the Code section
+B. All courts are bound by the Code section
+C. Only the Tax Court is bound to the Code section. All other courts may waiver from the Code section
+D. District, claims, and appellate courts are bound by the Code section. The Supreme and Tax Courts are not bound by it
+B. All courts are bound by the Code section
+
+
+Appeals from the US Court of Federal Claims is to the
+
+A. US Circuit Court of Appeals
+B. US Court of Appeals for the Federal Circuit
+C. US Supreme Court
+D. US Tax Court
+B. US Court of Appeals for the Federal Circuit
+
+
+The disclosure of a tax return position will reduce or eliminate an accuracy-related penalty on the taxpayer in which of the following circumstances?
+
+A. The position is not properly substantiated
+B. The position does not concern a tax shelter and has a reasonable basis
+C. The position concerns a tax shelter with substantial authority
+D. The position is frivolous
+B. The position does not concern a tax shelter and has a reasonable basis
+
+
+A married couple wants to file as married filing jointly. Spouse A is employed by the state as a minimum wage employee with spousal medical benefits, and wants to file using a December 31 year end, as that is the period for which the state issues earnings statements. Spouse B is self-employed as a ski instructor at a high-end ski resort, and wants to use a fiscal year end of June 30, as Spouse B is very busy during their winter months. Spouse B makes more than Spouse A does, mostly from tips. They live together all year, have two dependent children, and provide for their own support, sharing joint costs equally. Which filing status are they allowed to file under based on these preferences?
+
+A. Single
+B. Head of household
+C. Married filing separately
+D. Married filing jointly
+C. Married filing separately
+
+
+Paul earns $70,000 a year as a store manager. Paul contributes the maximum amount each year to a traditional individual retirement account (IRA). Paul expects to live on $35,000 a year when he retires in 10 years. Which of the following tax strategies should Paul choose to reduce his current and post-retirement tax liability?
+
+A. Put his money in a savings account instead of a traditional IRA
+B. Invest his money in municipal bonds instead of an IRA
+C. Continue to contribute the maximum amount each year to a traditional IRA
+D. Contribute to a Roth IRA instead of a traditional IRA
+C. Continue to contribute the maximum amount each year to a traditional IRA
+
+
+Hanna's widowed mother collects $1,200 per month in Social Security benefits, which she spends on medicine, clothing, transportation, and her dog. Hanna pays $1,500 per month for her mother's rent, utilities, and groceries. Hanna has been legally separated for 2 years and lives alone. Additionally, all of Hanna's children are adults and support themselves. Which of the following conditions must be satisfied for Hanna to both claim her mother as a dependent and herself as head of household?
+
+A. Hanna's mother must live with Hanna for a majority of the tax year
+B. Hanna is not eligible to claim her mother as a dependent
+C. Hanna must furnish more than 50% of the qualifying costs of maintaining her mother's household
+D. Hanna must not be married
+C. Hanna must furnish more than 50% of the qualifying costs of maintaining her mother's household
+
+
+Which of the following is not considered part of keeping up a home for purposes of determining head-of-household filing status?
+
+A. Allowance for depreciation
+B. Rent
+C. Food eaten in the home
+D. Real estate taxes
+A. Allowance for depreciation
+
+
+Ms. N, who is married, wants to file as head of household for the current year. Which of the following will prevent her from filing as head of household?
+
+A. She and her husband did not commingle funds for support purposes
+B. Her spouse lived in her home for the final 6 months of the current year
+C. Her home was, for more than 6 months of the year, the principal home of her son whom she can claim as a dependent
+D. She paid more than half the cost of keeping up her home for the tax year
+B. Her spouse lived in her home for the final 6 months of the current year
+
+
+When should a noncorporate taxpayer elect to forgo Sec 179 or elect out of bonus depreciation deduction in the current year?
+
+A. When the taxpayer expects lower rates in the future
+B. When the taxpayer expects net operating losses in the future
+C. When the taxpayer has low marginal tax rates in the current year and expects to be in higher marginal tax rates in the future
+D. When the taxpayer has high marginal tax rates in the current year and expects to be in lower marginal rates in the future
+C. When the taxpayer has low marginal tax rates in the current year and expects to be in higher marginal tax rates in the future
+
+
+Mr W died earlier in the current year. Mrs W remarried in December of the same year and therefore was unable to file a joint return with Mr W. What is the filing status of the decedent, Mr W?
+
+A. Married filing separate return
+B. Married filing joint return
+C. Single
+D. Head of household
+A. Married filing separate return
+
+
+Which of the following falls under the tax planning strategy of income shifting?
+
+A. Hiring a new employee in order to increase business expenses and decrease net income
+B. Shifting income from one spouse to the other on a joint return
+C. Filing a separate return in lieu of a joint return
+D. Hiring a family member in order to increase business expenses and increase family global net income
+D. Hiring a family member in order to increase business expenses and increase family global net income
+
+
+Four years ago, when Cox's spouse died, Cox filed a joint return for that year. Cox did not remarry, but continued to provide full support for a minor child who has been living with Cox. What is Cox's most advantageous filing status for the current year?
+
+A. Head of household
+B. Surviving Spouse
+C. Single
+D. Married filing separate
+A. Head of household
+
+
+A nonresident alien divorced couple (Taxpayer A and Taxpayer B) lives together providing 100% of their costs of the household and have a dependent child living with them all year. Neither has remarried by year end. Taxpayer A provides over 1/2 of the cost of household. Which taxpayer can file under head of household status?
+
+A. Neither
+B. Taxpayer B
+C. Taxpayer A
+D. Both
+A. Neither
+
+
+Anderson, a computer engineer, and his spouse, who is unemployed, provide more than half of the support for their child, age 23, who is a full-time student and who earns $7,000. they also provide more than half of the support for their older child, age 33, who earns $2,150 during the year. How many dependents may the Andersons claim on their joint tax return?
+
+A. 3
+B. 1
+C. 0
+D. 2
+D. 2 (23 year old and 33 year old)
+
+
+Thompson's spouse died in Year 1. Thompson did not remarry in Year 2 and lived alone the entire year. What is Thompson's Year 2 filing status?
+
+A. Surviving spouse
+B. Single
+C. Married filing jointly
+D. Head of household
+B. Single
+
+
+All of the following statements are true EXCEPT:
+
+A. For each person claimed as a dependent, the Social Security number, adoption taxpayer identification number, or individual taxpayer identification number must be listed.
+B. A son, age 21, was a full-time student who earned $4,300 from his part time job. The money was used to buy a car. Even though he earned $4,300, his parents can claim him as a dependent if the other dependency tests were met
+C. If a married person files a separate return, (s)he cannot claim his or her spouse as a dependent even if the spouse had no gross income and was not the dependent of another taxpayer
+D. A brother-in-law must live with the taxpayer the entire year to be claimed as a dependent even if the other tests are met
+D. A brother-in-law must live with the taxpayer the entire year to be claimed as a dependent even if the other tests are met
+
+
+Kyle provides landscaping services to a number of clients. In filing his current year income tax return, Kyle excluded revenue received from cash customers. If Kyle is found guilty of fraud, he may be subject to all of the following except
+
+A. Imprisonment for not more than 2 years
+B. A fine for not more than $250,000
+C. Other penalties as provided by law
+D. Being held responsible for the costs of prosecution
+A. Imprisonment for not more than 2 years
+
+
+In which of the following scenarios would the head of household filing status be available to the taxpayer?
+
+A. A single taxpayer maintains a separate home for his parent, who qualifies as a dependent
+B. A taxpayer with no dependents is the surviving spouse of an individual who died in the current year
+C. A single taxpayer maintains a household that is the principal home for 5 months of the year for his disabled child
+D. An unmarried taxpayer maintains a household with a 28 year old son, who earned $10,000 during the tax year
+A. A single taxpayer maintains a separate home for his parent, who qualifies as a dependent
+
+
+Mitchell purchased a $40,000 piece of equipment for his graphics business. When deciding whether to claim a Sec 179 deduction, Mitchell should consider all of the following except
+
+A. Shifting of income
+B. Time value of money
+C. Future tax law
+D. Individual circumstances of the taxpayer
+A. Shifting of income
+
+
+IRS rules that guarantee all parties involved in income shifting act in their own self-interest and not for the common good of all parties involved to the detriment of the IRS are related to all of the following except
+
+A. Arms-length transaction
+B. Assignment of liability doctrine
+C. Gift/wealth transfer rules
+D. Related party transaction
+B. Assignment of liability doctrine
+
+
+In 2020, Ada lived with her son, Robert, and his wife, Barbara. Ada's only source of income was a $1,500 fully taxable pension, which she spent on clothes and recreation. Robert and Barbara paid Ada's medical and drug expenses of $600 for the year. Robert and Barbara's total food expense for the house was $6,000. The fair rental value of the lodging provided Ada was $1,200 for the year, based on the cost of similar room facilities. What was Ada's total support for the year for purposes of determining whether Robert and Barbara can claim Ada as a dependent?
+
+A. $1,800
+B. $5,300
+C. None of the amounts are correct
+D. $3,300
+B. $5,300 A taxpayer must furnish more than one-half of the total support provided during the calendar year before claiming an exemption for a dependent (Reg. 1.152-1). Total support is determined on a yearly basis and is the sum of
+The fair rental value of lodging,
+The costs of all items of expense paid out directly by or for the benefit of the dependent, and
+A proportionate share of expenses incurred in supporting the whole household.
+Ada's total support for the year is $5,300 [$600 medical expenses + $1,200 lodging + 1/3 ($6,000) + $1,500 clothes/recreation].
+
+
+Which of the following is not a requirement that must be met in determining whether a taxpayer is considered unmarried for head of household filing status purposes?
+
+A. An individual's spouse must not have lived in their home for the last 6 months of the tax year
+B. An individual must file a separate return
+C. An individual must pay more than one half the cost of keeping up a home for the tax year
+D. For the entire year, an individual's home must be the main home of his or her child, stepchild, or adopted child, whom (s)he or the noncustodial parent can properly claim as a dependent
+D. For the entire year, an individual's home must be the main home of his or her child, stepchild, or adopted child, whom (s)he or the noncustodial parent can properly claim as a dependent

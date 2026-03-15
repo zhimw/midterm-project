@@ -23,18 +23,37 @@ class AgentRouter:
         try:
             plan = self._extract_json(raw_response)
             if not self._validate_plan(plan):
+                print(f"Router warning: invalid plan structure from model: {plan}")
                 return self._fallback_plan()
             return plan
         except Exception as e:
-            print(f"Router error: {e}, using fallback")
+            preview = raw_response if isinstance(raw_response, str) else str(raw_response)
+            preview = preview[:500].replace("\n", " ")
+            print(f"Router error: {e}. Raw router response preview: {preview}. Using fallback plan.")
             return self._fallback_plan()
     
     def _extract_json(self, text: str) -> dict:
         if not text or not isinstance(text, str):
             raise ValueError("Empty model output")
         
+        # Strip common markdown fences
         text = re.sub(r"```json", "", text, flags=re.IGNORECASE)
         text = re.sub(r"```", "", text)
+        text = text.strip()
+        
+        # First, try to parse the whole string directly
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            pass
+        
+        # If that fails, try to find the JSON object that contains "modules"
+        match = re.search(r"\{[\s\S]*?\"modules\"[\s\S]*?\}", text)
+        if match:
+            try:
+                return json.loads(match.group(0))
+            except json.JSONDecodeError:
+                pass
         
         start = text.find("{")
         if start == -1:

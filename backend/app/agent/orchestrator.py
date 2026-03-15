@@ -1,4 +1,5 @@
 from typing import Dict, Any, List
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from app.agent.router import router
 from app.agent.synthesizer import synthesizer
 from app.modules.tax import tax_module
@@ -33,14 +34,27 @@ class FamilyOfficeAgent:
         
         selected_modules = routing_plan.get("modules", [])
         
-        module_results = []
-        for module_name in selected_modules:
-            if module_name in self.modules:
-                try:
-                    result = self.modules[module_name].analyze(user_profile, question)
-                    module_results.append(result)
-                except Exception as e:
-                    print(f"Error in module {module_name}: {e}")
+        module_results: List[Dict[str, Any]] = []
+        module_names_to_run = [m for m in selected_modules if m in self.modules]
+        
+        if module_names_to_run:
+            # Run module analyses in parallel to reduce end-to-end latency
+            with ThreadPoolExecutor(max_workers=len(module_names_to_run)) as executor:
+                future_to_module = {
+                    executor.submit(self.modules[m].analyze, user_profile, question): m
+                    for m in module_names_to_run
+                }
+                
+                for future in as_completed(future_to_module):
+                    module_name = future_to_module[future]
+                    try:
+                        result = future.result()
+                        if isinstance(result, dict):
+                            module_results.append(result)
+                        else:
+                            print(f"Warning: module {module_name} returned non-dict result: {type(result)}")
+                    except Exception as e:
+                        print(f"Error in module {module_name}: {e}")
         
         if not module_results:
             return {

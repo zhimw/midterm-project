@@ -33,6 +33,10 @@ class ChatResponse(BaseModel):
     modules_used: List[str]
     conversation_history: List[ChatMessage]
 
+class TestRequest(BaseModel):
+    """Request for standardized testing: no user profile required."""
+    message: str = Field(..., description="Question or prompt to send to the agent")
+
 class ProfileRequest(BaseModel):
     session_id: str
     profile: UserProfile

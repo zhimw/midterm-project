@@ -1,0 +1,82 @@
+# Estate & Trust Domain - URL list for scraping
+# Sources: ABA, Nolo (Estate Planning Councils / law outlines = manual curation)
+# Target: 25-30 additional documents; corpus: backend/data/corpus/estate_knowledge.jsonl
+
+sources:
+  # --- American Bar Association ---
+  - url: https://www.americanbar.org/groups/real_property_trust_estate/resources/estate-planning/
+    category: estate_planning_basics
+    title: ABA Estate Planning Information
+  - url: https://www.americanbar.org/groups/public_education/resources/law_issues_for_consumers/estate/
+    category: estate_planning_basics
+    title: ABA Wills and Estates (Consumers)
+  - url: https://www.americanbar.org/groups/real_property_trust_estate/resources/estate-planning/diy-estate-planning/
+    category: estate_planning_basics
+    title: ABA DIY Estate Planning
+
+  # --- Nolo: Trust types ---
+  - url: https://nolo.com/legal-encyclopedia/revocable-living-trusts.html
+    category: revocable_trusts
+    title: Revocable Living Trusts
+  - url: https://nolo.com/legal-encyclopedia/irrevocable-living-trusts.html
+    category: irrevocable_trusts
+    title: Irrevocable Living Trusts
+  - url: https://www.nolo.com/legal-encyclopedia/testamentary-trusts.html
+    category: testamentary_trusts
+    title: Testamentary Trusts
+  - url: https://nolo.com/legal-encyclopedia/living-trust-faq.html
+    category: revocable_trusts
+    title: Living Trust FAQ
+  - url: https://www.nolo.com/legal-encyclopedia/living-trust-v-will.html
+    category: revocable_trusts
+    title: Living Trust vs Will
+  - url: https://nolo.com/legal-encyclopedia/dynasty-trusts-tying-up-the-family-fortune-forever.html
+    category: dynasty_trust
+    title: Dynasty Trusts
+  - url: https://nolo.com/legal-encyclopedia/charitable-trust-tax-deduction-break-29702.html
+    category: charitable_trusts
+    title: Charitable Remainder and Pooled Income Trusts
+  - url: https://nolo.com/legal-encyclopedia/charitable-lead-trusts.html
+    category: charitable_trusts
+    title: Charitable Lead Trusts
+
+  # --- Nolo: Probate ---
+  - url: https://nolo.com/legal-encyclopedia/avoid-probate-how-to-30235.html
+    category: probate
+    title: How to Avoid Probate
+  - url: https://nolo.com/legal-encyclopedia/ways-avoid-probate
+    category: probate
+    title: Ways to Avoid Probate
+  - url: https://www.nolo.com/legal-encyclopedia/how-living-trusts-avoid-probate-29848.html
+    category: probate
+    title: How Living Trusts Avoid Probate
+
+  # --- Nolo: Power of attorney & healthcare ---
+  - url: https://www.nolo.com/legal-encyclopedia/what-is-a-power-of-attorney.html
+    category: power_of_attorney
+    title: What Is a Power of Attorney
+  - url: https://www.nolo.com/legal-encyclopedia/durable-power-of-attorney-health-finances-29579.html
+    category: power_of_attorney
+    title: Durable POA for Health and Finances
+  - url: https://nolo.com/legal-encyclopedia/durable-financial-power-of-attorney-29936.html
+    category: power_of_attorney
+    title: Durable Financial Power of Attorney
+
+  # --- Gift tax & estate tax (Nolo / IRS) ---
+  - url: https://nolo.com/legal-encyclopedia/the-federal-gift-tax.html
+    category: gift_tax
+    title: The Federal Gift Tax
+  - url: https://nolo.com/legal-encyclopedia/reduce-estate-tax-by-gifts-30095.html
+    category: gift_tax
+    title: Reduce Estate Tax by Making Gifts
+  - url: https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes
+    category: estate_tax
+    title: IRS Estate and Gift Taxes Overview
+
+  # --- Healthcare directives (external; scrape if allowed) ---
+  - url: https://www.nia.nih.gov/health/advance-care-planning-health-care-directives
+    category: healthcare_directive
+    title: NIA Advance Care Planning and Directives
+  - url: https://www.nia.nih.gov/health/advance-care-planning/preparing-living-will
+    category: healthcare_directive
+    title: NIA Preparing a Living Will

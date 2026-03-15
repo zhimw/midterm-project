@@ -1,12 +1,20 @@
 from typing import Dict, Any, List
+import re
 import json
 from app.llm.client import llm_client
 from app.llm.prompts import SYNTHESIZER_SYSTEM_PROMPT, RISK_DISCLAIMER
 
+# When the question starts with this (from /test endpoint), respond with only A, B, C, or D.
+MULTIPLE_CHOICE_PREFIX = "This is a multiple-choice test."
+
+
 class RecommendationSynthesizer:
     def __init__(self):
         self.llm = llm_client
-    
+
+    def _is_multiple_choice(self, question: str) -> bool:
+        return question.strip().startswith(MULTIPLE_CHOICE_PREFIX)
+
     def synthesize(
         self,
         question: str,
@@ -15,27 +23,49 @@ class RecommendationSynthesizer:
     ) -> Dict[str, Any]:
         context_blocks = []
         all_evidence = []
-        
+
         for result in module_results:
             module_name = result.get("module", "unknown")
             analysis = result.get("analysis", "")
             evidence = result.get("evidence", [])
-            
+
             context_blocks.append(f"=== {module_name.upper().replace('_', ' ')} ===\n{analysis}")
             all_evidence.extend(evidence)
-        
+
         combined_context = "\n\n".join(context_blocks)
-        
-        profile_summary = f"""
+        multiple_choice = self._is_multiple_choice(question)
+
+        if multiple_choice:
+            system = "You are a tax/finance expert. Answer multiple-choice questions with ONLY the single letter of the correct answer: A, B, C, or D. No explanation, no other text."
+            user_content = f"""Module Analyses:
+{combined_context}
+
+Based on the analyses above, the correct answer to the multiple-choice question is exactly one letter. Reply with ONLY that letter: A, B, C, or D."""
+            messages = [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user_content}
+            ]
+            final_recommendation = self.llm.generate(messages, temperature=0, max_tokens=10)
+            # Normalize to a single letter for scoring; guard against None or empty
+            if final_recommendation is None:
+                final_recommendation = ""
+            text = (final_recommendation or "").strip().upper()
+            match = re.search(r"\b([A-D])\b", text)
+            if match:
+                final_recommendation = match.group(1)
+            else:
+                final_recommendation = text[:1] if text else "?"
+            # No disclaimer in test mode
+        else:
+            profile_summary = f"""
 Age: {user_profile.get('age')}, Income: ${user_profile.get('income', 0):,}
 Assets: {user_profile.get('assets', {})}
 Family: {user_profile.get('family', {})}
 Goals: {user_profile.get('goals', [])}
 """
-        
-        messages = [
-            {"role": "system", "content": SYNTHESIZER_SYSTEM_PROMPT},
-            {"role": "user", "content": f"""
+            messages = [
+                {"role": "system", "content": SYNTHESIZER_SYSTEM_PROMPT},
+                {"role": "user", "content": f"""
 User Profile:
 {profile_summary}
 
@@ -53,12 +83,10 @@ Synthesize a comprehensive, integrated recommendation that:
 
 Format your response with clear sections and bullet points.
 """}
-        ]
-        
-        final_recommendation = self.llm.generate(messages, temperature=0.4, max_tokens=8192)
-        
-        final_recommendation += RISK_DISCLAIMER
-        
+            ]
+            final_recommendation = self.llm.generate(messages, temperature=0.4, max_tokens=8192)
+            final_recommendation += RISK_DISCLAIMER
+
         breakdown = self._create_breakdown(module_results)
         
         return {

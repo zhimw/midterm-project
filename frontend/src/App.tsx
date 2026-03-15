@@ -51,7 +51,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response: ChatResponse = await apiClient.sendMessage(sessionId, message);
+      const response: ChatResponse = await apiClient.sendMessage(sessionId, message, userProfile ?? undefined);
       
       setMessages(prev => [...prev, {
         role: 'assistant',

@@ -8,3 +8,9 @@ dist/
 venv/
 .venv/
 *.local
+
+# Persisted FAISS indices (rebuilt from corpus on first run or when deleted)
+backend/data/faiss_index/
+
+# CLI session persistence (optional; delete to start a new conversation)
+backend/scripts/.agent_session
