@@ -97,6 +97,7 @@ def run_tests(questions_path: str, verbose: bool, output_path: str | None, limit
             r.raise_for_status()
             data = r.json()
             response_text = data.get("response", "")
+            raw_answer = data.get("raw_answer", "")
         except requests.RequestException as e:
             print(f"[{qid}] ERROR: {e}", file=sys.stderr)
             err_detail = str(e)
@@ -119,6 +120,7 @@ def run_tests(questions_path: str, verbose: bool, output_path: str | None, limit
             "expected": expected,
             "passed": passed,
             "response": response_text[:2000] if response_text else "",
+            "agent_full_answer": (raw_answer or "")[:2000],
             "modules_used": data.get("modules_used", []),
         })
 

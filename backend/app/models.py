@@ -28,6 +28,7 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     session_id: str
     response: str
+    raw_answer: Optional[str] = Field(default=None, description="Full agent answer before any normalization (for MC tests)")
     breakdown: Dict[str, Any]
     evidence: List[Dict[str, Any]]
     modules_used: List[str]

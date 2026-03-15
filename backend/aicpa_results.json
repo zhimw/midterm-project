@@ -5,10 +5,9 @@
     "expected": "C",
     "passed": true,
     "response": "C",
+    "agent_full_answer": "C",
     "modules_used": [
-      "tax_optimization",
-      "investment_allocation",
-      "estate_planning"
+      "tax_optimization"
     ]
   },
   {
@@ -17,18 +16,18 @@
     "expected": "D",
     "passed": false,
     "response": "A",
+    "agent_full_answer": "A",
     "modules_used": [
-      "tax_optimization",
-      "investment_allocation",
-      "estate_planning"
+      "tax_optimization"
     ]
   },
   {
     "id": "q03",
     "ok": true,
     "expected": "C",
-    "passed": false,
-    "response": "?",
+    "passed": true,
+    "response": "C",
+    "agent_full_answer": "C",
     "modules_used": [
       "tax_optimization"
     ]
@@ -39,10 +38,9 @@
     "expected": "C",
     "passed": true,
     "response": "C",
+    "agent_full_answer": "C",
     "modules_used": [
-      "tax_optimization",
-      "investment_allocation",
-      "estate_planning"
+      "tax_optimization"
     ]
   },
   {
@@ -51,10 +49,9 @@
     "expected": "C",
     "passed": true,
     "response": "C",
+    "agent_full_answer": "C",
     "modules_used": [
-      "tax_optimization",
-      "investment_allocation",
-      "estate_planning"
+      "tax_optimization"
     ]
   }
 ]

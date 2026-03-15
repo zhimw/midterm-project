@@ -35,26 +35,36 @@ class RecommendationSynthesizer:
         combined_context = "\n\n".join(context_blocks)
         multiple_choice = self._is_multiple_choice(question)
 
+        raw_answer: str | None = None
+
         if multiple_choice:
+            # Strip the test prefix so the model sees the clean question + answer choices.
+            clean_question = question[len(MULTIPLE_CHOICE_PREFIX):].strip()
             system = "You are a tax/finance expert. Answer multiple-choice questions with ONLY the single letter of the correct answer: A, B, C, or D. No explanation, no other text."
-            user_content = f"""Module Analyses:
+            user_content = f"""Question:
+{clean_question}
+
+Module Analyses:
 {combined_context}
 
-Based on the analyses above, the correct answer to the multiple-choice question is exactly one letter. Reply with ONLY that letter: A, B, C, or D."""
+Based on the question and the analyses above, reply with ONLY the single letter of the correct answer: A, B, C, or D."""
             messages = [
                 {"role": "system", "content": system},
                 {"role": "user", "content": user_content}
             ]
-            final_recommendation = self.llm.generate(messages, temperature=0, max_tokens=10)
-            # Normalize to a single letter for scoring; guard against None or empty
-            if final_recommendation is None:
-                final_recommendation = ""
-            text = (final_recommendation or "").strip().upper()
-            match = re.search(r"\b([A-D])\b", text)
-            if match:
-                final_recommendation = match.group(1)
+            raw_answer = self.llm.generate(messages, temperature=0, max_tokens=256, disable_thinking=True)
+            # Normalize to a single letter for scoring; guard against None or empty,
+            # using logic similar to run_standardized_tests.normalize_answer.
+            text = (raw_answer or "").strip().upper()
+            if not text:
+                final_recommendation = "?"
             else:
-                final_recommendation = text[:1] if text else "?"
+                letter_match = re.search(r"\b([A-D])\b", text)
+                if letter_match:
+                    final_recommendation = letter_match.group(1)
+                else:
+                    # Fallback: take first character, uppercased
+                    final_recommendation = text[:1]
             # No disclaimer in test mode
         else:
             profile_summary = f"""
@@ -86,11 +96,13 @@ Format your response with clear sections and bullet points.
             ]
             final_recommendation = self.llm.generate(messages, temperature=0.4, max_tokens=8192)
             final_recommendation += RISK_DISCLAIMER
+            raw_answer = final_recommendation
 
         breakdown = self._create_breakdown(module_results)
         
         return {
             "recommendation": final_recommendation,
+            "raw_answer": raw_answer,
             "breakdown": breakdown,
             "evidence": all_evidence,
             "modules_used": [r["module"] for r in module_results]

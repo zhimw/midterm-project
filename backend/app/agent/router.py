@@ -18,7 +18,7 @@ class AgentRouter:
             {"role": "user", "content": f"Question: {question}{profile_context}"}
         ]
         
-        raw_response = self.llm.generate(messages, temperature=0.0, max_tokens=512, json_mode=True)
+        raw_response = self.llm.generate(messages, temperature=0.0, max_tokens=1024, json_mode=True, disable_thinking=True)
         
         try:
             plan = self._extract_json(raw_response)
@@ -36,9 +36,9 @@ class AgentRouter:
         if not text or not isinstance(text, str):
             raise ValueError("Empty model output")
         
-        # Strip common markdown fences
-        text = re.sub(r"```json", "", text, flags=re.IGNORECASE)
-        text = re.sub(r"```", "", text)
+        # Strip common markdown fences (opening and closing)
+        text = re.sub(r"^```(?:json)?\s*", "", text.strip(), flags=re.IGNORECASE)
+        text = re.sub(r"\s*```\s*$", "", text.strip())
         text = text.strip()
         
         # First, try to parse the whole string directly
@@ -55,6 +55,11 @@ class AgentRouter:
             except json.JSONDecodeError:
                 pass
         
+        # Try to recover from truncated JSON: extract "modules": ["a", "b", ...]
+        modules = self._extract_modules_from_truncated(text)
+        if modules:
+            return {"modules": modules, "reasoning": "Recovered from truncated router response"}
+        
         start = text.find("{")
         if start == -1:
             raise ValueError("No JSON object found")
@@ -67,9 +72,28 @@ class AgentRouter:
                 brace_count -= 1
                 if brace_count == 0:
                     json_str = text[start:i+1]
-                    return json.loads(json_str)
+                    try:
+                        return json.loads(json_str)
+                    except json.JSONDecodeError:
+                        break
+        # Last resort: try truncated extraction again on the substring we have
+        modules = self._extract_modules_from_truncated(text[start:])
+        if modules:
+            return {"modules": modules, "reasoning": "Recovered from truncated router response"}
         
         raise ValueError("No valid JSON object could be parsed")
+    
+    def _extract_modules_from_truncated(self, text: str) -> List[str]:
+        """Extract module names from truncated JSON like '"modules": ["tax_optimization"'."""
+        valid = {"tax_optimization", "investment_allocation", "estate_planning"}
+        # Find "modules": [ ... ] - allow incomplete closing
+        m = re.search(r'"modules"\s*:\s*\[([\s\S]*?)(?:\]|$)', text)
+        if not m:
+            return []
+        inner = m.group(1)
+        # Extract quoted module names
+        found = re.findall(r'"([a-z_]+)"', inner)
+        return [x for x in found if x in valid]
     
     def _validate_plan(self, plan: Dict[str, Any]) -> bool:
         if "modules" not in plan or not isinstance(plan["modules"], list):

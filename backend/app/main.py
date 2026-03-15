@@ -122,6 +122,7 @@ async def chat(request: ChatRequest):
         return ChatResponse(
             session_id=request.session_id,
             response=result["response"],
+            raw_answer=result.get("raw_answer"),
             breakdown=result["breakdown"],
             evidence=result["evidence"],
             modules_used=result["modules_used"],
@@ -198,6 +199,7 @@ async def standardized_test(request: TestRequest):
         return ChatResponse(
             session_id=session_id,
             response=result["response"],
+            raw_answer=result.get("raw_answer"),
             breakdown=result["breakdown"],
             evidence=result["evidence"],
             modules_used=result["modules_used"],

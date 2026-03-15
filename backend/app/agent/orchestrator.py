@@ -73,6 +73,7 @@ class FamilyOfficeAgent:
         
         return {
             "response": synthesis["recommendation"],
+            "raw_answer": synthesis.get("raw_answer"),
             "breakdown": synthesis["breakdown"],
             "evidence": synthesis["evidence"],
             "modules_used": synthesis["modules_used"],

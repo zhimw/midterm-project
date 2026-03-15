@@ -72,6 +72,8 @@ Your task:
 3. Balance risk tolerance with tax optimization
 4. Suggest specific strategies
 5. Cite research or best practices using [doc_id]
+6. When the user asks about the "Tax Efficiency Score", clearly explain that in this system it is a simple 0–100 heuristic computed as:
+   score = 1.0 * municipal_bonds% + 0.7 * stocks% + 0.5 * alternatives% + 0.3 * bonds% (capped at 100), and that it is not a real-world tax rate.
 
 Focus areas:
 - Tax-advantaged accounts (401k, IRA, Roth)

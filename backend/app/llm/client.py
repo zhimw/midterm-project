@@ -29,7 +29,8 @@ class LLMClient:
         messages: List[Dict[str, str]],
         temperature: float = 0.7,
         max_tokens: int = 4096,
-        json_mode: bool = False
+        json_mode: bool = False,
+        disable_thinking: bool = False,
     ) -> str:
         if self.provider == "openai":
             kwargs = {
@@ -60,15 +61,31 @@ class LLMClient:
 
             prompt_text = "\n".join(prompt_lines)
 
+            # Configure generation; when json_mode is requested, ask Gemini
+            # to return proper JSON instead of free-form text.
+            gen_config_kwargs: Dict[str, Any] = {
+                "temperature": temperature,
+                "max_output_tokens": max_tokens,
+            }
+            if json_mode:
+                # Hint to the model that the response must be strict JSON.
+                # This is supported by the new google-genai SDK.
+                gen_config_kwargs["response_mime_type"] = "application/json"
+            if disable_thinking:
+                # Gemini 2.5 Flash is a thinking model. By default it spends a large
+                # hidden token budget on internal reasoning before producing output.
+                # For short deterministic tasks (routing, MC answers) this means the
+                # visible output can be empty or truncated. Setting thinking_budget=0
+                # disables that reasoning phase so all tokens go to the actual reply.
+                gen_config_kwargs["thinking_config"] = types.ThinkingConfig(thinking_budget=0)
+
             response = self.client.models.generate_content(
                 model=self.model,
                 contents=types.Part.from_text(text=prompt_text),
-                config=types.GenerateContentConfig(
-                    temperature=temperature,
-                    max_output_tokens=max_tokens,
-                ),
+                config=types.GenerateContentConfig(**gen_config_kwargs),
             )
-            return response.text
+            # response.text can be None when blocked or empty; return "" as a safe fallback.
+            return response.text or ""
         
         elif self.provider == "groq":
             kwargs = {
