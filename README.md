@@ -1,6 +1,6 @@
 # Family Office AI Agent
 
-An intelligent multi-agent planning system for high-net-worth US families, providing integrated financial guidance across **tax optimization**, **investment allocation**, and **estate planning** through a RAG-augmented, multi-provider LLM architecture.
+An intelligent multi-agent planning system for high-net-worth US families, providing integrated financial guidance across **tax optimization**, **investment allocation**, and **estate planning** through a RAG-augmented architecture powered by **Google Gemini**.
 
 > **Course Project** — Columbia University EECS6895 (Big Data Analytics)  
 > **Demo Video**: [Google Drive Link — add your link here]  
@@ -202,19 +202,22 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 **Create a session and profile:**
 ```bash
 SESSION=$(curl -s -X POST http://localhost:8000/session/new | python3 -c "import sys,json; print(json.load(sys.stdin)['session_id'])")
-
+```
+```bash
 curl -s -X POST http://localhost:8000/profile/create \
   -H "Content-Type: application/json" \
   -d "{
     \"session_id\": \"$SESSION\",
-    \"age\": 45,
-    \"income\": 850000,
-    \"filing_status\": \"married_filing_jointly\",
-    \"state\": \"CA\",
-    \"assets\": {\"stocks\": 2000000, \"real_estate\": 1500000, \"cash\": 300000},
-    \"family\": {\"children\": 2, \"marital_status\": \"married\"},
-    \"risk_tolerance\": \"moderate\",
-    \"time_horizon\": \"long_term\"
+    \"profile\": {
+      \"age\": 45,
+      \"income\": 850000,
+      \"filing_status\": \"married_filing_jointly\",
+      \"state\": \"CA\",
+      \"assets\": {\"stocks\": 2000000, \"real_estate\": 1500000, \"cash\": 300000},
+      \"family\": {\"children\": 2, \"marital_status\": \"married\"},
+      \"risk_tolerance\": \"moderate\",
+      \"time_horizon\": \"long_term\"
+    }
   }"
 ```
 
@@ -228,19 +231,17 @@ curl -s -X POST http://localhost:8000/chat \
   }" | python3 -m json.tool
 ```
 
-**Response structure:**
+**Response structure** (see `ChatResponse` in `backend/app/models.py`; keys vary by query):
+
 ```json
 {
+  "session_id": "uuid-here",
   "response": "Based on your profile...",
-  "breakdown": {
-    "tax_strategies": ["Maximize 401(k) contributions", "Tax-loss harvesting", ...],
-    "investment_allocation": {"stocks": 60, "bonds": 25, ...},
-    "estate_triggers": ["Estate value approaching exemption threshold"]
-  },
-  "evidence": [
-    {"doc_id": "tax_001", "category": "federal_tax", "snippet": "..."}
-  ],
-  "modules_used": ["tax_optimization", "investment_allocation"]
+  "raw_answer": null,
+  "breakdown": { "tax_strategies": [], "investment_allocation": {}, "estate_triggers": [] },
+  "evidence": [{ "doc_id": "tax_001", "category": "federal_tax", "snippet": "..." }],
+  "modules_used": ["tax_optimization", "investment_allocation"],
+  "conversation_history": []
 }
 ```
 
@@ -250,11 +251,11 @@ curl -s -X POST http://localhost:8000/chat \
 cd backend
 source venv/bin/activate
 
-# Interactive session
-python3 scripts/query_agent.py --interactive
+# Interactive (omit arguments; empty line to quit)
+python3 scripts/query_agent.py
 
-# One-shot query
-python3 scripts/query_agent.py --question "How can I minimize capital gains taxes?"
+# One-shot query (positional message)
+python3 scripts/query_agent.py "How can I minimize capital gains taxes?"
 ```
 
 ### Run Evaluation Benchmarks

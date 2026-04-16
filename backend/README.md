@@ -13,9 +13,8 @@ User Query → Router → Domain Modules (Tax/Investment/Estate) → RAG Retriev
 ## Core Components
 
 ### 1. LLM Client (`app/llm/client.py`)
-- Supports OpenAI, Gemini, and Groq providers
+- Uses **Google Gemini** for all LLM calls
 - Configurable via environment variables
-- Unified interface for all providers
 
 ### 2. RAG System (`app/rag/`)
 - Vector store management with FAISS
@@ -56,10 +55,8 @@ cp .env.example .env
 
 Edit `.env`:
 ```
-LLM_PROVIDER=openai  # or gemini, groq
-OPENAI_API_KEY=sk-...
+LLM_PROVIDER=gemini
 GEMINI_API_KEY=...
-GROQ_API_KEY=...
 ```
 
 ### 3. Verify Corpus Files
@@ -167,17 +164,9 @@ To add knowledge:
 
 ## LLM Provider Configuration
 
-### OpenAI
-- Model: `gpt-4o-mini` (fast, cost-effective)
-- Best for: Production use, consistent quality
-
 ### Gemini
 - Model: `gemini-2.5-flash`
-- Best for: Fast inference with the latest Gemini API
-
-### Groq
-- Model: `llama-3.3-70b-versatile`
-- Best for: Extremely fast inference, open-source
+- Notes: This project is configured to use Gemini only.
 
 ## Troubleshooting
 
